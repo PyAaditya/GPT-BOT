@@ -1,1 +1,1 @@
-GPT: python3 chatgpt.py
+GPT: python3 bot.py
