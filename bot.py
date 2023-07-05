@@ -27,13 +27,12 @@ GPT = Client(
     bot_token = BOT_TOKEN
 )
 START = f"""
-๏ ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME}
-➻ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ ʙᴏᴛ.
-──────────────────
-➻ **ᴜsᴀɢᴇ**:\n\n `/chatgpt` : Ask AnyThing.
-    **ᴇxᴀᴍᴘʟᴇ**: `/chatgpt Where is TajMahal?`
+ʜᴇʟʟᴏ, ɪᴛs {BOT_NAME}
+   
+✇ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ ʙᴏᴛ.
+✇ ғᴏʀ ʜᴇʟᴘ ᴛʏᴘᴇ /help
 
-๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help
+ᴜsᴀɢᴇ : /ask where is hampi
 """
 aditya = ("https://github.com/PyAaditya/GPT-BOT")
 owner = ("Xotic69")
@@ -42,10 +41,9 @@ SOURCE = aditya
 UPDATE_CHNL = xotic
 DEVELOPER = owner
 SOURCE_TEXT = f"""
-๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}]
-➻ ᴀɴ ᴏᴘᴇɴ-ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛɢᴘᴛ.
-──────────────────
-ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ
+✇ ᴛʜɪs ɪs ᴛʜᴇ sᴏᴜʀᴄᴇ ᴏғ [{BOT_NAME}]
+
+**ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ʀᴇᴅɪʀᴇᴄᴛ ᴛᴏ ʀᴇᴘᴏ**
 """
 
 
@@ -63,12 +61,12 @@ MAIN = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="HELP"),
+        InlineKeyboardButton(teᴅxt="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callbackɪ_data="HELP"),
     ],
     [
         InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/PyAaditya/GPT-BOT"),
         InlineKeyboardButton(text=" ᴜᴘᴅᴀᴛᴇs ", url=f"https://t.me/{UPDATE_CHNL}"),
-    ],
+    ]ᴇ,
 ]
 X = [
     [
@@ -92,10 +90,10 @@ PNG_BTN = [
      ],
 ]
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', url=f"{SOURCE}")]])
-HELP_READ = "➻ ᴜsᴇ /chatgpt write a simple flask app in python.  \n\n **➻ ᴜsᴇ /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**"
+HELP_READ = "✘ ᴜsᴇ /ask write a simple calculator code in python.  \n\n **✘ ᴜsᴇ /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ.**"
 HELP_BACK = [
      [
-           InlineKeyboardButton(text="Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴀᴛ ᴄʜᴀᴛɢᴘᴛ ᴄᴀɴ ꜱᴏʟᴠᴇ ", url=f"https://t.me/CodersW0rld/633"),
+#           InlineKeyboardButton(text="Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴀᴛ ᴄʜᴀᴛɢᴘᴛ ᴄᴀɴ ꜱᴏʟᴠᴇ", url=f"https://t.me/CodersW0rld/633"),
            
      ],
     [
@@ -206,7 +204,7 @@ async def chat(bot, message):
 
             await message.reply_text(
 
-            "**Example:**\n\n`/generate a white siamese cat`")
+            "**Example:**\n\n`/generate a white siamese cat`\n")
 
         else:
 
@@ -233,13 +231,13 @@ adi = ("https://github.com/PyAaditya/GPT-BOT")
 adi2 = ("XOTIC69")
 adi3= ("CODERSW0RLD")
 if SOURCE != adi:
-    print("So sad, you have changed source, change it back to ` https://github.com/PyAaditya/GPT-BOT `  else I won't work")
+    print("sed, you have changed source, change it back to ` https://github.com/PyAaditya/GPT-BOT `  else I won't work")
     sys.exit(1)  
 if DEVELOPER!=adi2:
-    print("So sad, you have changed Updates, change it back to `XOTIC69` else I won't work")
+    print("sed, you have changed Updates, change it back to `XOTIC69` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=adi3:
-    print("So sad, you have change developer, change it back to `CODERSW0RLD` else I won't work")
+    print("sed, you have change developer, change it back to `CODERSW0RLD` else I won't work")
     sys.exit(1)
 
 
@@ -262,3 +260,4 @@ GIVE STAR TO THE REPO
     GPT.stop()
     print("Bot stopped. Bye !")
 
+ 
