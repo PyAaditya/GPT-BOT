@@ -66,7 +66,7 @@ MAIN = [
     [
         InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/PyAaditya/GPT-BOT"),
         InlineKeyboardButton(text=" ᴜᴘᴅᴀᴛᴇs ", url=f"https://t.me/{UPDATE_CHNL}"),
-    ᴇ,
+    ],
 ]
 X = [
     [
