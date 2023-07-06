@@ -61,7 +61,7 @@ MAIN = [
         ),
     ],
     [
-        InlineKeyboardButton(teᴅxt="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callbackɪ_data="HELP"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="HELP"),
     ],
     [
         InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/PyAaditya/GPT-BOT"),
