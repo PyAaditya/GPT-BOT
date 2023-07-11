@@ -103,7 +103,7 @@ HELP_BACK = [
 
   
 #         start
-@GPT.on_message(filters.command(["start",f"start@{BOT_USERNAME}"]))
+@GPT.on_message(filters.command(["tstart",f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
