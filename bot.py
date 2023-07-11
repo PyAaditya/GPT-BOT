@@ -158,7 +158,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ !!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘɪɴɢ ᴏꜰ \n⭆ `{ms}` ms\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [xᴏᴛɪᴄ](https://t.me/Xotic69)||",
+                             caption=f"ʜᴇʏ !!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ sᴛᴀʀᴛᴇᴅ ᴀɴᴅ ɪᴛ's ᴀʟɪᴠᴇ. \n➥ ᴘɪɴɢ ᴏғ ᴛʜɪs ʙᴏᴛ ɪs : `{ms}` ms\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [xᴏᴛɪᴄ](https://t.me/Xotic69)||",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
@@ -172,7 +172,7 @@ async def chat(bot, message):
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
         if len(message.command) < 2:
             await message.reply_text(
-            "Example:**\n\n`/chatgpt Where is Hampi?`")
+            "Example:**\n\n`/ask Main Shlok of Bhagwat gita`")
         else:
 
             a = message.text.split(' ', 1)[1]
@@ -184,7 +184,7 @@ async def chat(bot, message):
             x=resp['choices'][0]["message"]["content"]
             end_time = time.time()
             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ᴍs"
-            await message.reply_text(f"{message.from_user.first_name} ᴀꜱᴋᴇᴅ:\n\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\n✨ᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
+            await message.reply_text(f"ᴛʜᴇ ǫᴜᴇsᴛɪᴏɴ ᴡᴀs:\n {a} \n\n {BOT_NAME} ᴀɴꜱᴡᴇʀᴇᴅ:-\n\n {x}\n\nᴛɪᴍᴇ ᴛᴀᴋᴇɴ  {telegram_ping} \n\n• ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup(X))     
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ:    {e} ")
 
