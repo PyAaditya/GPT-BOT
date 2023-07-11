@@ -103,7 +103,7 @@ HELP_BACK = [
 
   
 #         start
-@GPT.on_message(filters.command(["tstart",f"start@{BOT_USERNAME}"]))
+@GPT.on_message(filters.command(["tstart",f"tstart@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
@@ -145,7 +145,7 @@ async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
 #  alive
-@GPT.on_message(filters.command(["ping","alive", "start"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
+@GPT.on_message(filters.command(["ping","alive", "start", f"start@{BOT_USERNAME}"], prefixes=["+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "ℓσα∂ιηg..."
