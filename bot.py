@@ -148,7 +148,7 @@ async def source(bot, m):
 @GPT.on_message(filters.command(["ping","alive", "start"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
-        t = "ριиgιиg..."
+        t = "ℓσα∂ιηg..."
         txxt = await message.reply(t)
         await asyncio.sleep(0.25)
         await txxt.edit_text("ριиgιиg.....")
