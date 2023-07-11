@@ -145,7 +145,7 @@ async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
 #  alive
-@GPT.on_message(filters.command(["ping","alive"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
+@GPT.on_message(filters.command(["ping","alive", "start"], prefixes=["","+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "ριиgιиg..."
@@ -158,7 +158,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ !!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [xᴏᴛɪᴄ](https://t.me/Xotic69)||",
+                             caption=f"ʜᴇʏ !!\n**[{BOT_NAME}](t.me/{BOT_USERNAME}) ɪꜱ ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘɪɴɢ ᴏꜰ \n⭆ `{ms}` ms\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [xᴏᴛɪᴄ](https://t.me/Xotic69)||",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
