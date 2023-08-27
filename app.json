@@ -1,7 +1,7 @@
 {
     "name": "Chat-Gpt",
     "description": "A Telegram Chatgpt bot.",
-#    "logo": "https://te.legra.ph/file/9fa2101b77407dbec7d31.jpg",
+    "logo": "",
     "keywords": [
     "telegram",
     "chatgpt",
@@ -32,6 +32,7 @@
         
         "SUPPORT_GRP": {
             "description": "Your Support Chat without @",
+            "value" : "QuirkySquads", 
             "required": false
         },
         "STKR": {
@@ -44,10 +45,12 @@
         },
         "API_ID": {
             "description": "telegram api id.",
+            "value" : "",
             "required": true
         },
         "API_HASH": {
             "description": "telegram api hash",
+            "value" : "",
             "required": true
         }
     },
