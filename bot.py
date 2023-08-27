@@ -160,7 +160,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ !!\n**[ᴄʜᴧᴛ ꭙ ɢᴘᴛ](t.me/{BOT_USERNAME}) ɪꜱ sᴛᴀʀᴛᴇᴅ ᴀɴᴅ ɪᴛ's ᴀʟɪᴠᴇ. \n\n➥ ᴘɪɴɢ ᴏғ ᴛʜɪs ʙᴏᴛ ɪs : `{ms}` ms\n\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [xᴏᴛɪᴄ](https://t.me/Xotic69)||",
+                             caption=f"ʜᴇʏ !!\n**[ᴄʜᴧᴛ ꭙ ɢᴘᴛ](t.me/{BOT_USERNAME}) ɪꜱ sᴛᴀʀᴛᴇᴅ ᴀɴᴅ ɪᴛ's ᴀʟɪᴠᴇ. \n\n➥ ᴘɪɴɢ ᴏғ ᴛʜɪs ʙᴏᴛ ɪs : `{ms}` ms\n\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [ᴢᴇɴ](https://t.me/Zen69)||",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
