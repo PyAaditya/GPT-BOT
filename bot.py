@@ -1,4 +1,4 @@
-#Code By @Zen69 on telegram
+#Code By @NoobZen on telegram
 from pyrogram import Client, filters,enums,idle
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -166,7 +166,7 @@ async def ping(client, message: Message):
 
 #  main   
 openai.api_key = OPENAI_KEY
-@GPT.on_message(filters.command(["somya","jeeneetards"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@GPT.on_message(filters.command(["ask","ai","chatgpt"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
