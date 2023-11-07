@@ -235,7 +235,7 @@ adi3= ("ZenBotX")
 if SOURCE != adi:
     print("sed, you have changed source it back to ` https://github.com/PyAaditya/GPT-BOT `  else I won't work")
     sys.exit(1)  
-if DEVELOPER==adi2:
+if DEVELOPER!=adi2:
     print("sed, you have changed Dev, change it back to `NoobZen` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=adi3:
@@ -254,7 +254,7 @@ if __name__ == "__main__":
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    print(f"""JOIN  @ZenWorldxD
+    print(f"""JOIN  @ZenbotX
 GIVE STAR TO THE REPO 
  {BOT_NAME} ɪs ᴀʟɪᴠᴇ!  
     """)
