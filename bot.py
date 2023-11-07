@@ -35,8 +35,8 @@ START = f"""
 ᴜsᴀɢᴇ : /ask where is hampi
 """
 aditya = ("https://github.com/PyAaditya/GPT-BOT")
-owner = ("Xotic69")
-xotic = ("CODERSW0RLD")
+owner = ("NoobZen")
+xotic = ("ZenBotX")
 SOURCE = aditya
 UPDATE_CHNL = xotic
 DEVELOPER = owner
@@ -160,13 +160,13 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ !!\n**[ᴄʜᴧᴛ ꭙ ɢᴘᴛ](t.me/{BOT_USERNAME}) ɪꜱ sᴛᴀʀᴛᴇᴅ ᴀɴᴅ ɪᴛ's ᴀʟɪᴠᴇ. \n\n➥ ᴘɪɴɢ ᴏғ ᴛʜɪs ʙᴏᴛ ɪs : `{ms}` ms\n\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [ᴢᴇɴ](https://t.me/Zen69)||",
+                             caption=f"ʜᴇʏ !!\n**[ᴄʜᴧᴛ ꭙ ɢᴘᴛ](t.me/{BOT_USERNAME}) ɪꜱ sᴛᴀʀᴛᴇᴅ ᴀɴᴅ ɪᴛ's ᴀʟɪᴠᴇ. \n\n➥ ᴘɪɴɢ ᴏғ ᴛʜɪs ʙᴏᴛ ɪs : `{ms}` ms\n\n☉︎ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ sᴇɴᴅ /help .\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣ ʙʏ || [ᴢᴇɴ](https://t.me/NoobZen)||",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
 #  main   
 openai.api_key = OPENAI_KEY
-@GPT.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
+@GPT.on_message(filters.command(["somya","jeeneetards"],  prefixes=["","+", ".", "/", "-", "?", "$","#","&"]))
 async def chat(bot, message):
     
     try:
@@ -230,16 +230,16 @@ async def chat(bot, message):
 
     
 adi = ("https://github.com/PyAaditya/GPT-BOT")
-adi2 = ("Zen69")
-adi3= ("ZenWorldxD")
+adi2 = ("NoobZen")
+adi3= ("ZenBotX")
 if SOURCE != adi:
     print("sed, you have changed source it back to ` https://github.com/PyAaditya/GPT-BOT `  else I won't work")
     sys.exit(1)  
-if DEVELOPER==adi2:
-    print("sed, you have changed Dev, change it back to `Zen69` else I won't work")
+if DEVELOPER!=adi2:
+    print("sed, you have changed Dev, change it back to `NoobZen` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=adi3:
-    print("sed, you have change Updates, change it back to `ZenWorldxD` else I won't work")
+    print("sed, you have change Updates, change it back to `ZenBotX` else I won't work")
     sys.exit(1)
 
 
@@ -254,7 +254,7 @@ if __name__ == "__main__":
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    print(f"""JOIN  @ZenWorldxD
+    print(f"""JOIN  @ZenbotX
 GIVE STAR TO THE REPO 
  {BOT_NAME} ɪs ᴀʟɪᴠᴇ!  
     """)
