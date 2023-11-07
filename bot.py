@@ -35,8 +35,8 @@ START = f"""
 ᴜsᴀɢᴇ : /ask where is hampi
 """
 aditya = ("https://github.com/PyAaditya/GPT-BOT")
-owner = ("Xotic69")
-xotic = ("CODERSW0RLD")
+owner = ("NoobZen")
+xotic = ("ZenBotX")
 SOURCE = aditya
 UPDATE_CHNL = xotic
 DEVELOPER = owner
@@ -230,16 +230,16 @@ async def chat(bot, message):
 
     
 adi = ("https://github.com/PyAaditya/GPT-BOT")
-adi2 = ("Zen69")
-adi3= ("ZenWorldxD")
+adi2 = ("NoobZen")
+adi3= ("ZenBotX")
 if SOURCE != adi:
     print("sed, you have changed source it back to ` https://github.com/PyAaditya/GPT-BOT `  else I won't work")
     sys.exit(1)  
 if DEVELOPER==adi2:
-    print("sed, you have changed Dev, change it back to `Zen69` else I won't work")
+    print("sed, you have changed Dev, change it back to `NoobZen` else I won't work")
     sys.exit(1)
 if UPDATE_CHNL!=adi3:
-    print("sed, you have change Updates, change it back to `ZenWorldxD` else I won't work")
+    print("sed, you have change Updates, change it back to `ZenBotX` else I won't work")
     sys.exit(1)
 
 
